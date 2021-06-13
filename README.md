@@ -1,23 +1,30 @@
 # OpenUniversityDownloader
 
 
-Note that any use is under your responsibility.
+Note1: 
+Everything here is under your responsibility.
+
+Note2:
+Major changes were commited on 13/06/2021. 
+Before that date the version was completely different. 
+You are welcome to consult if you are having connection issues or if you want to download the video in splitted parts, as there is an implementation for that. 
 
 
-If you use the partial one, it will download in batches of around ~230MB per part. 
-This is useful if you don't have stable internet connection and cannot wait for the entire ~2.3GB video  (3 Hours).
-If your internet connection is stable, it is better to use the the full downloader python script.
+Videos are packed in size of around ~2MB per packet. 
+
+Prerequisite: 
 
 
 To use:
 
+1. Edit "loginDetails.yml" and put in your login credentials 
+2. Find the relevant videos you wish to download and copy their URLS (link) to "url_list.csv" file. 
+3. Run "main.py"
 
-1. Go to the relevant video, in the network section (web-browser developer mode) find the serial sequence of the video. 
-2. Paste the link to the list, you can add more than 1 video (it will be iterated).
-3. Only if you use the partial python, use the BASH script to join the videos. The script has to be edited (4 first lines) and you need to download MP4Box package. Run it. 
-4. Run the video and enjoy your studying. Try to score over 90 :)  
+Optional
 
-You can download multiply videos in parallel. 
+1. Edit "configurations.yml" file to adjust the parameters 
+
 
 
 This should only be used for personal use, as long as you have the original access to the video. 
