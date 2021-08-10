@@ -5,20 +5,20 @@ Note1:
 Everything here is under your responsibility.
 
 Note2:
-Major changes were commited on 13/06/2021. 
-Before that date the version was completely different. 
-You are welcome to consult if you are having connection issues or if you want to download the video in splitted parts, as there is an implementation for that. 
+1. Videos are packed in sizes of around 500kb~2MB per packet, depends on quality.
+2. Number of workers is defined as 50, that is 50 links donwloaded in parallel. 
+3. Video start referes to the start index (minimum is 1)
+4. Video end referes to the end index (for max/unlimted define it as -1)
 
-
-Videos are packed in size of around ~2MB per packet. 
 
 Prerequisite: 
+1. pip install -r requirements.txt 
 
 
 To use:
 
 1. Edit "loginDetails.yml" and put in your login credentials 
-2. Find the relevant videos you wish to download and copy their URLS (link) to "url_list.csv" file. 
+2. Find the relevant videos you wish to download and copy their URLS (link) to "url_list.csv" file. It will downloaded all the videos in there
 3. Run "main.py"
 
 Optional
