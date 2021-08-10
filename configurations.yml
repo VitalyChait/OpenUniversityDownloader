@@ -1,0 +1,82 @@
+saving_config:
+  file_name: Algo_
+  extension: .mp4
+  start_index: -1
+  end_index: -1
+
+  save_dir: "video_saved"
+  save_csv: 1
+  
+  
+  # The segment below is a special segment for direct links 
+  # Enable this to download directly from a series of links, links with the naming convention of: media_b{Video quality}_{Serial indexing}.ts
+  # Link Example: https://souvod.bynetcdn.com/vod/smil:vod/openu/PRV3/Qb5yygQUGs/App/Qb5yygQUGs_10.smil/media_b400000_0.ts?md5=o8JHbXZMK80hAgXnnDiGiQ&expires=1628125730
+  
+  # Load from external CSV file enable and put the path(name) below 
+  partial_work: 0
+  load_file_name: "Book1.csv"
+  
+  # Load from the original CSV file, "url_list"
+  full_collection: 1
+  
+  # End of special segment 
+
+
+
+video_config:
+  video_start: 0            
+  video_end: 1301  
+  num_of_retry_attempts: 30 
+  video_size: 150           
+  pool: 50
+  vid_quality: 4
+  
+ # Video part start (Default = 0)
+ # Video part end, +1 for looping (Default = 1150)
+ # Around 2MB * Size
+ # Number of attempts to reconnect
+ # Pool is number of parallel downloading workers
+ # Video quality, 4 is max available 
+
+
+
+timeout_config:            
+  login_max_timeout: 200    
+  video_max_timeout: 400    
+  start_timeout: 5          
+  step: 5  
+  
+
+
+login_config:
+  login_url: https://www.openu.ac.il/
+  usernameId: p_user
+  passwordId: p_sisma
+  IDId: p_mis_student
+  submit_xpath: //*[@id="login_sso"]/fieldset/input[1]
+  button_id: openu_myop_plugin_MyOpAppsBtn
+  fid: openu_myop_plugin_person_iframeId
+  
+
+
+filter_config:
+  key_a: method
+  key_b: params
+  key_c: initialPriority
+  key_d: url
+  filter_a: Network.requestWillBeSent
+  filter_b: request
+  filter_c: High
+  filter_d: https://souvod.bynetcdn.com/vod
+  link_start: https://opal.openu.ac.il/mod/ouilvideocollection/view.php?v=
+  
+  split_text_a: "media_b"
+  split_text_b: ".ts"
+  split_text_c: "00000_"
+  
+  quality_low: "4"
+  quality_medium: "8"
+  quality_high: "12"
+  quality_very_high: "18"
+  
+  

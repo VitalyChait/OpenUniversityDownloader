@@ -1,0 +1,12 @@
+openU_user:
+  OpenUniversityUsername: USER
+  OpenUniversityPassword: Pass123
+  OpenUniversityID: 1234567789
+  
+
+
+Note_example_for_syntax:
+  OpenUniversityUsername: "username"
+  OpenUniversityPassword: "password1234"
+  OpenUniversityID: 1234567789
+  
