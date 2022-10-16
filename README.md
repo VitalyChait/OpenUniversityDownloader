@@ -1,5 +1,7 @@
 # OpenUniversityDownloader
 
+A quick project that helps you download the university videos offline. Useful if you don't have a stable internet connection.
+
 
 Note1: 
 Everything here is under your responsibility.
